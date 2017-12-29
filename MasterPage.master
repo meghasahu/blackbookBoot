@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Online BlackBook</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+    <!--navigation bar-->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="About.aspx">ABOUT</a>  </li>
+        <li><a href="Library.aspx">LIBRARY</a></li>
+        <li><a href="join.aspx">JOIN</a></li>
+        <li><a href="create.aspx">CREATE</a></li>
+        <li><a href="Settings.aspx">SETTING</a></li>
+       </ul>
+
+     <ul class="nav navbar-nav navbar-right">
+         <li><a><span class="glyphicon glyphicon-log-out">LOGOUT</span></a></li>
+     </ul>
+        </div>
+          </nav>
+
+    <!--navigation bar end-->
+
+
+    <asp:ContentPlaceHolder ID="content1" runat="server"></asp:ContentPlaceHolder>
+   </body>
+
+</html>
