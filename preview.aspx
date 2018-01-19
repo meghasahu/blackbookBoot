@@ -1,8 +1,8 @@
-﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="WebSite2_MasterPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="preview.aspx.cs" Inherits="WebSite2_preview" %>
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
     <style>
@@ -133,7 +133,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form2" runat="server">
         <div class="navbar">
     <ul>
     <li id="home"> <a href="/Home1.aspx/"><i class="fa fa-home">&nbsp; </i>Home</a></li>
@@ -150,50 +150,9 @@
           <li id="Extra" class="auto-style2"><a href="/products/"><i class="fa fa-inbox">&nbsp;</i>Message</a></li>
    </ul>
 </div> 
-
-         <table>
-            <tr>
-                <!-- for list-->
-                <td style="vertical-align:top;">
-                    <div class="navbar-vertical">
-                        <ul>
-                            <li><a href="frontPage.aspx"> frontpage </a></li>                           
-                            <li><a href="Acknowledgement.aspx"> Acknowledgement </a></li>
-                            <li><a href="Certificate.aspx"> Certificate </a></li>
-                            <li><a href="Statement.aspx"> Statement  </a></li>
-                            <li><a href="index.aspx"> Index  </a></li>
-                            <li><a href="intro.aspx"> Introduction </a></li>
-                            <li><a href="Statement.aspx"> feasilbilty  </a></li>
-                            <li><a href="diagram.aspx"> Diagram  </a></li>
-                            <li><a href="code.aspx">Source Code </a></li>
-                            
-                            <li><a href="Reference.aspx"> Reference  </a></li>
-                        </ul>
-                    </div>
-
-                    
-
-                </td>
-       
-             <td style="vertical-align:top;">
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-
-        </asp:ContentPlaceHolder>
-    </td>
-                </tr>
-             <tr>
-                
-             <td>
-
-             </td>
-             <td>
-                 <asp:ContentPlaceHolder ID="placeButton" runat="server">
-
-                 </asp:ContentPlaceHolder>
-                 </td>
-             </tr>
-             </table>
+        <div>
+            <iframe src="files/this3.pdf" style="width:500px;height:1000px"></iframe>
+        </div>
     </form>
 </body>
 </html>

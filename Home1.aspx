@@ -1,12 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Library.aspx.cs" Inherits="Library" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Home1.aspx.cs" Inherits="Home1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+   <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>-->
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-        .navbar{
+
+     .navbar{
          text-align:center;
          width:100%;
          background-color:#2683AE;
@@ -41,7 +44,7 @@
 }
 .navbar ul li:hover{
     background:#C1C1C1;
-    transition:1s;
+    transition:0.9s;
 }
 .navbar ul li:hover a{
     color:red;
@@ -68,7 +71,21 @@
     color:#C1C1C1;
     transition:3s;
 }
-    </style>
+.navbar ul ul li a:active{
+    color:green;
+}
+ .auto-style1 {
+            margin-left: 0px;
+            margin-right: 100px;xz
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+  body {
+            background-image:url('img/p1.jpg');
+            background-size:cover;
+        }
+     
+     </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -76,8 +93,8 @@
     <ul>
     <li id="home"> <a href="/Home1.aspx/"><i class="fa fa-home">&nbsp; </i>Home</a></li>
     <li id="join"><a href="/log/"> <i class="fa fa-group">&nbsp; </i>Join</a></li>
-    <li id="cbook"><a href="/products/"><i class="fa fa-edit">&nbsp;</i>Create Book</a></li>
-    <li id="lib"><a href="/services/"><i class="fa fa-book">&nbsp;</i>Library</a></li>
+    <li id="cbook"><a href="/Create.aspx/"><i class="fa fa-edit">&nbsp;</i>Create Book</a></li>
+    <li id="lib"><a href="Library.aspx"><i class="fa fa-book">&nbsp;</i>Library</a></li>
     <li id="setting" ><a href="/products/">
     <i class="fa fa-asterisk">&nbsp;</i>Setting</a>
         <ul>
@@ -88,7 +105,17 @@
           <li id="Extra" class="auto-style2"><a href="/products/"><i class="fa fa-inbox">&nbsp;</i>Message</a></li>
    </ul>
 </div>
+         <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:Timer ID="Timer1" runat="server" Interval="6000" OnTick="Timer1_Tick"></asp:Timer>
+            <asp:Image ID="Image1" runat="server"  Height="649px" Width="1508px" ImageAlign="Middle" CssClass="auto-style1" />
+    
+        <br />
+    
+    </div>
     
     </form>
 </body>
 </html>
+
+     
