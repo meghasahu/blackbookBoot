@@ -4,5 +4,7 @@
 -->
 <VisualWebDeveloper>
 
-  <iisExpressSettings sslPort="44365" windowsAuthentication="disabled" anonymousAuthentication="enabled" useClassicPipelineMode="false"/>
+  <Globals>
+    <UserProperties UseAjaxifiedTemplates="False" UseJQuerySupport="False"/>
+  </Globals>
 </VisualWebDeveloper>

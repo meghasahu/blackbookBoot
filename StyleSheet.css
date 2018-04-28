@@ -1,0 +1,91 @@
+﻿/*nevagiton bar*/
+.navbar {
+    text-align: center;
+    width: 100%;
+    background-color: #142b47;
+    font-size: 1.5em;
+}
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+        .navbar ul li a {
+            display: block;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            width: 180px;
+        }
+
+
+        .navbar ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .navbar ul li {
+            float: left;
+            list-style: none;
+            vertical-align: middle;
+        }
+
+        .navbar ul ul {
+            display: none;
+            z-index: 599;
+            position: absolute;
+        }
+
+        .navbar ul li:hover > ul {
+            display: block;
+        }
+
+        .navbar ul li:hover {
+            background: #044576;
+            transition: 0.9s;
+        }
+
+            .navbar ul li:hover a {
+                color: red;
+            }
+
+#navbar a.active {
+    background-color: green;
+    color: white;
+}
+
+.navbar ul ul {
+    background: #142b47;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    opacity: 5;
+}
+
+    .navbar ul ul li {
+        float: none;
+        position: relative;
+    }
+
+        .navbar ul ul li a {
+            padding: 12px;
+            color: red;
+            width: 225px;
+            text-align: left;
+        }
+
+            .navbar ul ul li a:hover {
+                background: #044576;
+                transition: 3s;
+            }
+/*footer effect*/
+.nb-copyright {
+    background: #142b47;
+    padding-bottom: 5px;
+}
+
